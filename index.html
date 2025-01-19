@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcolatore delle Calorie - Personalizzato</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1><span class="highlight">Calcolatore</span> delle Calorie</h1>
+    <p>Scopri il tuo fabbisogno calorico giornaliero in pochi semplici passi.</p>
+  </header>
+  <main>
+    <div class="container">
+      <form id="calorie-form" class="form-style">
+        <div class="form-group">
+          <label for="age">Età:</label>
+          <input type="number" id="age" placeholder="Inserisci la tua età" required>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Sesso:</label>
+          <select id="gender" required>
+            <option value="male">Maschio</option>
+            <option value="female">Femmina</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="height">Altezza (cm):</label>
+          <input type="number" id="height" placeholder="Inserisci la tua altezza" required>
+        </div>
+
+        <div class="form-group">
+          <label for="weight">Peso (kg):</label>
+          <input type="number" id="weight" placeholder="Inserisci il tuo peso" required>
+        </div>
+
+        <div class="form-group">
+          <label for="activity">Livello di attività:</label>
+          <select id="activity" required>
+            <option value="1.2">Sedentario</option>
+            <option value="1.375">Leggermente attivo</option>
+            <option value="1.55">Moderatamente attivo</option>
+            <option value="1.725">Molto attivo</option>
+            <option value="1.9">Estremamente attivo</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="goal">Obiettivo:</label>
+          <select id="goal" required>
+            <option value="0.8">Perdere peso</option>
+            <option value="1">Mantenere peso</option>
+            <option value="1.2">Aumentare massa</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary">Calcola</button>
+      </form>
+      
+      <section id="results" class="results-section">
+        <h2>Risultati</h2>
+        <p id="calories-output">Inserisci i dati per calcolare il deficit calorico.</p>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* Stile generale */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #ff4b4b;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+header h1 .highlight {
+  color: #fff8dc;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffe6e6;
+}
+
+/* Container principale */
+.container {
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff8dc;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form generale */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Etichette */
+label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0044cc;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input e selezioni */
+input, select {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+}
+
+input:hover, select:hover {
+  border-color: #ff4b4b;
+  background-color: #f9f1f1;
+}
+
+input:focus, select:focus {
+  border-color: #ff4b4b;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 75, 75, 0.5);
+}
+
+/* Pulsante */
+button {
+  background-color: #ff4b4b;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+/* Sezione risultati */
+.results-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9ff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#calories-output {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0044cc;
+  margin-top: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+}
